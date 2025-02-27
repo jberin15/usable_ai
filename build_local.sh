@@ -46,10 +46,10 @@ else
 fi
 
 # Cleaning...
-mkdocs build --clean
+# mkdocs build --clean
 # Serve the MkDocs site locally
 info "Building and serving MkDocs site..."
-mkdocs serve
+mkdocs serve --clean
 
 # Output instructions for accessing the site
 success "MkDocs site is live at http://127.0.0.1:8000"

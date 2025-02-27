@@ -115,6 +115,15 @@ nav:
     - "Module 2 - Python Basics 2": 
         - m02-python_basics2/python_basics2.ipynb
         - m02-python_basics2/assigment_m02.ipynb
+    - "Module 3 - Numpy and Pandas Basics": 
+        - m03-numpy_pandas/numpy_basics.ipynb
+        - m03-numpy_pandas/pandas_basics.ipynb
+        - m03-numpy_pandas/assignment_m03_sol.ipynb
+    - "Module 4 - Tidy Data and Databases":
+        - m04-tidy_databases/tidy_data.ipynb
+        - m04-tidy_databases/more_tidy_data.ipynb
+        - m04-tidy_databases/assignment_m04_databases.ipynb
+        - m04-tidy_databases/assignment_m04_billboard.ipynb
 
     # - "Module 1 - Python basics":
     #     - m01-python_basics/python_basics.ipynb
