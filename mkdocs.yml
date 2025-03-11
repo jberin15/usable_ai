@@ -124,6 +124,12 @@ nav:
         - m04-tidy_databases/more_tidy_data.ipynb
         - m04-tidy_databases/assignment_m04_databases.ipynb
         - m04-tidy_databases/assignment_m04_billboard.ipynb
+    - "Module 5 - Intro to ML and EDA":
+        - m05-ml_eda/exploratory_data_analysis.ipynb
+        - m05-ml_eda/assignment_m05_eda.ipynb
+    - "Module 6 - Regression":
+        - m06-regression/assignment_m06_regression.ipynb
+
 
     # - "Module 1 - Python basics":
     #     - m01-python_basics/python_basics.ipynb

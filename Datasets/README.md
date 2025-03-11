@@ -1,9 +1,9 @@
 Datasets collected from Kaggle
 
-- [Stories](https://www.kaggle.com/datasets/jaredsavage/solar-system-major-bodies-data)
-    - `sol_data.json`
+- Stories
+    - `story-#.txt`
 
- <!-- - Solar System major bodies data
+- Solar System major bodies data
     - `sol_data.json`
     - Link: https://www.kaggle.com/datasets/jaredsavage/solar-system-major-bodies-data
 
@@ -27,10 +27,6 @@ Datasets collected from Kaggle
     - `carfeatures.csv`
     - Link: https://www.kaggle.com/datasets/CooperUnion/cardataset
 
- - Dog adoption
-    - `dog_adoption.csv`
-    - Link: https://www.kaggle.com/datasets/whenamancodes/dog-adoption/
-
  - California Wildfires
     - `California_Fire_Incidents.csv`
     - Link: https://www.kaggle.com/datasets/ananthu017/california-wildfire-incidents-20132020
@@ -38,3 +34,12 @@ Datasets collected from Kaggle
 - Anscombe's Quartet
     - `Anscombe_quartet_data.csv`
     - Link: https://www.kaggle.com/datasets/carlmcbrideellis/data-anscombes-quartet -->
+
+- IMDB Movies Dataset
+    - `imdb_movies.csv`
+    - Link: https://www.kaggle.com/datasets/ashpalsingh1525/imdb-movies-dataset
+
+- Mysterious Data
+    - `mysterious_data.csv`
+    - ?????
+
