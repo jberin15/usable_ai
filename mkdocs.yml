@@ -129,6 +129,10 @@ nav:
         - m05-ml_eda/assignment_m05_eda.ipynb
     - "Module 6 - Regression":
         - m06-regression/assignment_m06_regression.ipynb
+    - "Module 7 - Classification and Clustering":
+        - m07-classification_clustering/assignment_m07_classification.ipynb
+    - "Module 8 - Model Evaluation and Validation":
+        - m08-model_evaluation/assignment_m08_clustering.ipynb
 
 
     # - "Module 1 - Python basics":
