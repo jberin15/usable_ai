@@ -1,0 +1,1672 @@
+Variable_Name,Value,Value_Label
+_STATE,1,Alabama
+_STATE,2,Alaska
+_STATE,4,Arizona
+_STATE,5,Arkansas
+_STATE,6,California
+_STATE,8,Colorado
+_STATE,9,Connecticut
+_STATE,10,Delaware
+_STATE,11,District of Columbia
+_STATE,12,Florida
+_STATE,13,Georgia
+_STATE,15,Hawaii
+_STATE,16,Idaho
+_STATE,17,Illinois
+_STATE,18,Indiana
+_STATE,19,Iowa
+_STATE,20,Kansas
+_STATE,22,Louisiana
+_STATE,23,Maine
+_STATE,24,Maryland
+_STATE,25,Massachusetts
+_STATE,26,Michigan
+_STATE,27,Minnesota
+_STATE,28,Mississippi
+_STATE,29,Missouri
+_STATE,30,Montana
+_STATE,31,Nebraska
+_STATE,32,Nevada
+_STATE,33,New Hampshire
+_STATE,34,New Jersey
+_STATE,35,New Mexico
+_STATE,36,New York
+_STATE,37,North Carolina
+_STATE,38,North Dakota
+_STATE,39,Ohio
+_STATE,40,Oklahoma
+_STATE,41,Oregon
+_STATE,44,Rhode Island
+_STATE,45,South Carolina
+_STATE,46,South Dakota
+_STATE,47,Tennessee
+_STATE,48,Texas
+_STATE,49,Utah
+_STATE,50,Vermont
+_STATE,51,Virginia
+_STATE,53,Washington
+_STATE,54,West Virginia
+_STATE,55,Wisconsin
+_STATE,56,Wyoming
+_STATE,66,Guam
+_STATE,72,Puerto Rico
+_STATE,78,Virgin Islands
+FMONTH,1,January
+FMONTH,2,February
+FMONTH,3,March
+FMONTH,4,April
+FMONTH,5,May
+FMONTH,6,June
+FMONTH,7,July
+FMONTH,8,August
+FMONTH,9,September
+FMONTH,10,October
+FMONTH,11,November
+FMONTH,12,December
+IMONTH,1,January
+IMONTH,2,February
+IMONTH,3,March
+IMONTH,4,April
+IMONTH,5,May
+IMONTH,6,June
+IMONTH,7,July
+IMONTH,8,August
+IMONTH,9,September
+IMONTH,10,October
+IMONTH,11,November
+IMONTH,12,December
+IDAY,1,Interview Day
+IDAY,2,14256
+IDAY,3,13746
+IDAY,4,12160
+IDAY,5,14537
+IDAY,6,15763
+IDAY,7,15758
+IDAY,8,15583
+IDAY,9,14324
+IDAY,10,14873
+IDAY,11,15261
+IDAY,12,14966
+IDAY,13,15719
+IDAY,14,15222
+IDAY,15,15059
+IDAY,16,14445
+IDAY,17,14094
+IDAY,18,14062
+IDAY,19,13910
+IDAY,20,15385
+IDAY,21,15351
+IDAY,22,14034
+IDAY,23,12319
+IDAY,24,12277
+IDAY,25,12185
+IDAY,26,13353
+IDAY,27,14883
+IDAY,28,14632
+IDAY,29,11019
+IDAY,30,12024
+IDAY,31,8268
+IYEAR,2023,408012
+IYEAR,2024,25311
+DISPCODE,1100,Completed Interview
+DISPCODE,1200,Partial Complete Interview
+CTELENM1,1,"Yes - Go to LL.02, PVTRESD1"
+PVTRESD1,1,"Yes - Go to LL.04, STATERE1"
+PVTRESD1,2,"No - Go to LL.03, COLGHOUS"
+COLGHOUS,1,"Yes - Go to LL.04, STATERE1"
+STATERE1,1,"Yes - Go to LL.05, CELPHON1"
+STATERE1,2,No - Terminate Phone Call
+CELPHON1,2,"Not a cell phone - Go to LL.06, LADULT1"
+CELPHON1,4,1
+LADULT1,1,"Yes - If LL.03, COLGHOUS, is 1 go to LL.09, LANDSEX2; else go to LL.07, NUMADULT"
+LADULT1,2,"No - If LL.03, COLGHOUS, is 1
+Terminate Phone Call, else go to LL.07, NUMADULT"
+NUMADULT,1,"Number of adults in the household - Go to LL.09, LANDSEX2"
+NUMADULT,2,"Number of adults in the household - Go to LL.08, RESPSLC1"
+NUMADULT,3,"Number of adults in the household - Go to LL.08, RESPSLC1"
+NUMADULT,4,"Number of adults in the household - Go to LL.08, RESPSLC1"
+NUMADULT,5,"Number of adults in the household - Go to LL.08, RESPSLC1"
+RESPSLC1,1,Yes
+RESPSLC1,2,No - Ask for correct respondent
+RESPSLC1,4,1
+LANDSEX2,1,Male
+LANDSEX2,2,Female
+LANDSEX2,7,Don't know/Not Sure
+LANDSEX2,9,Refused
+SAFETIME,1,"Yes - Go to CP.02, CTELNUM1"
+CTELNUM1,1,"Yes - Go to CP.03, CELLFON5"
+CELLFON5,1,"Yes - Go to CP.04, CADULT1"
+CADULT1,1,"Yes - Go to CP.05, CELLSEX1"
+CELLSEX2,1,"Male - Go to CP.07, PVTRESD3"
+CELLSEX2,2,"Female - Go to CP.07, PVTRESD3"
+CELLSEX2,7,Don't know/Not Sure
+CELLSEX2,9,Refused
+PVTRESD3,1,"Yes - Go to CP.09, CSTATE1"
+PVTRESD3,2,"No - Go to CP.08, CCLGHOUS"
+CCLGHOUS,1,"Yes - Go to CP.09, CSTATE1"
+CSTATE1,1,"Yes - Go to CP.11, LANDLINE"
+CSTATE1,2,"No - Go to CP.10, RSPSTAT1"
+LANDLINE,1,Yes
+LANDLINE,2,No
+LANDLINE,7,Don't know/Not sure
+LANDLINE,9,Refused
+HHADULT,77,Don't know/Not sure
+HHADULT,99,Refused
+SEXVAR,1,Male - Code=1 if LANDSEX2=1 or CELLSEX2=1
+SEXVAR,2,Female - Code=2 if LANDSEX2=2 or CELLSEX2=2
+GENHLTH,1,Excellent
+GENHLTH,2,Very good
+GENHLTH,3,Good
+GENHLTH,4,Fair
+GENHLTH,5,Poor
+GENHLTH,7,Don't know/Not Sure
+GENHLTH,9,Refused
+PHYSHLTH,88,None
+PHYSHLTH,77,Don't know/Not sure
+PHYSHLTH,99,Refused
+MENTHLTH,88,None
+MENTHLTH,77,Don't know/Not sure
+MENTHLTH,99,Refused
+POORHLTH,88,None
+POORHLTH,77,Don't know/Not sure
+POORHLTH,99,Refused
+PRIMINS1,1,A plan purchased through an employer or union (including plans purchased through another person's employer)
+PRIMINS1,2,A private nongovernmental plan that you or another family member buys on your own
+PRIMINS1,3,Medicare
+PRIMINS1,4,Medigap
+PRIMINS1,5,Medicaid
+PRIMINS1,6,Children's Health Insurance Program (CHIP)
+PRIMINS1,7,Military related health care: TRICARE (CHAMPUS) / VA health care / CHAMP- VA
+PRIMINS1,8,Indian Health Service
+PRIMINS1,9,State sponsored health plan
+PRIMINS1,10,Other government program
+PRIMINS1,88,No coverage of any type
+PRIMINS1,77,Don't know/Not Sure
+PRIMINS1,99,Refused
+PERSDOC3,1,"Yes, only one"
+PERSDOC3,2,More than one
+PERSDOC3,3,No
+PERSDOC3,7,Don't know/Not Sure
+PERSDOC3,9,Refused
+MEDCOST1,1,Yes
+MEDCOST1,2,No
+MEDCOST1,7,Don't know/Not sure
+MEDCOST1,9,Refused
+CHECKUP1,1,Within past year (anytime less than 12 months ago)
+CHECKUP1,2,Within past 2 years (1 year but less than 2 years ago)
+CHECKUP1,3,Within past 5 years (2 years but less than 5 years ago)
+CHECKUP1,4,5 or more years ago
+CHECKUP1,7,Don't know/Not sure
+CHECKUP1,8,Never
+CHECKUP1,9,Refused
+EXERANY2,1,Yes
+EXERANY2,2,No - Go to Section 04.08 STRENGTH
+EXERANY2,7,Don't know/Not Sure - Go to Section 04.08 STRENGTH
+EXERANY2,9,Refused - Go to Section 04.08 STRENGTH
+EXRACT12,1,Walking
+EXRACT12,2,Running or jogging
+EXRACT12,3,Gardening or yard work
+EXRACT12,4,Bicycling or bicycling machine exercise
+EXRACT12,5,Aerobics video or class
+EXRACT12,6,Calisthenics
+EXRACT12,7,Elliptical/EFX machine exercise
+EXRACT12,8,Household activities
+EXRACT12,9,Weight lifting
+EXRACT12,10,"Yoga, Pilates, or Tai Chi"
+EXRACT12,11,Other
+EXRACT12,77,"Don't know/Not Sure - Go to Section
+04.08 STRENGTH"
+EXRACT12,99,Refused - Go to Section 04.08 STRENGTH
+EXEROFT1,777,Don't know/Not sure
+EXEROFT1,999,Refused
+EXERHMM1,777,Don't know/Not sure
+EXERHMM1,999,Refused
+EXRACT22,1,Walking
+EXRACT22,2,Running or jogging
+EXRACT22,3,Gardening or yard work
+EXRACT22,4,Bicycling or bicycling machine exercise
+EXRACT22,5,Aerobics video or class
+EXRACT22,6,Calisthenics
+EXRACT22,7,Elliptical/EFX machine exercise
+EXRACT22,8,Household activities
+EXRACT22,9,Weight lifting
+EXRACT22,10,"Yoga, Pilates, or Tai Chi"
+EXRACT22,11,Other
+EXRACT22,88,"No other activity - Go to Section
+04.08 STRENGTH"
+EXRACT22,77,"Don't know/Not Sure - Go to Section
+04.08 STRENGTH"
+EXRACT22,99,Refused - Go to Section 04.08 STRENGTH
+EXEROFT2,777,Don't know/Not sure
+EXEROFT2,999,Refused
+EXERHMM2,777,Don't know/Not sure
+EXERHMM2,999,Refused
+STRENGTH,777,Don't know / Not sure
+STRENGTH,888,Never
+STRENGTH,999,Refused
+BPHIGH6,1,Yes
+BPHIGH6,2,"Yes, but female told only during pregnancy - Go to Section 06.01 CHOLCHK3"
+BPHIGH6,3,No - Go to Section 06.01 CHOLCHK3
+BPHIGH6,4,Told borderline high or pre- hypertensive or elevated blood pressure - Go to Section 06.01 CHOLCHK3
+BPHIGH6,7,"Don't know/Not Sure - Go to Section
+06.01 CHOLCHK3"
+BPHIGH6,9,Refused - Go to Section 06.01 CHOLCHK3
+BPMEDS1,1,Yes
+BPMEDS1,2,No
+BPMEDS1,7,Don't know/Not Sure
+BPMEDS1,9,Refused
+CHOLCHK3,1,Never - Go to Section 07.01 CVDINFR4
+CHOLCHK3,2,Within the past year (anytime less than one year ago)
+CHOLCHK3,3,Within the past 2 years (1 year but less than 2 years ago)
+CHOLCHK3,4,Within the past 3 years (2 years but less than 3 years ago)
+CHOLCHK3,5,Within the past 4 years (3 years but less than 4 years ago)
+CHOLCHK3,6,Within the past 5 years (4 years but less than 5 years ago)
+CHOLCHK3,7,"Don't know/Not Sure - Go to Section
+07.01 CVDINFR4"
+CHOLCHK3,8,5 or more years ago
+CHOLCHK3,9,Refused - Go to Section 07.01 CVDINFR4
+TOLDHI3,1,Yes
+TOLDHI3,2,No
+TOLDHI3,7,Don't know/Not Sure
+TOLDHI3,9,Refused
+CHOLMED3,1,Yes
+CHOLMED3,2,No
+CHOLMED3,7,Don't know/Not Sure
+CHOLMED3,9,Refused
+CVDINFR4,1,Yes
+CVDINFR4,2,No
+CVDINFR4,7,Don't know/Not sure
+CVDINFR4,9,Refused
+CVDCRHD4,1,Yes
+CVDCRHD4,2,No
+CVDCRHD4,7,Don't know/Not sure
+CVDCRHD4,9,Refused
+CVDSTRK3,1,Yes
+CVDSTRK3,2,No
+CVDSTRK3,7,Don't know/Not sure
+CVDSTRK3,9,Refused
+ASTHMA3,1,Yes
+ASTHMA3,2,No - Go to Section 07.06 CHCSCNC1
+ASTHMA3,7,"Don't know/Not Sure - Go to Section
+07.06 CHCSCNC1"
+ASTHMA3,9,Refused - Go to Section 07.06 CHCSCNC1
+ASTHNOW,1,Yes
+ASTHNOW,2,No
+ASTHNOW,7,Don't know/Not Sure
+ASTHNOW,9,Refused
+CHCSCNC1,1,Yes
+CHCSCNC1,2,No
+CHCSCNC1,7,Don't know / Not sure
+CHCSCNC1,9,Refused
+CHCOCNC1,1,Yes
+CHCOCNC1,2,No
+CHCOCNC1,7,Don't know / Not sure
+CHCOCNC1,9,Refused
+CHCCOPD3,1,Yes
+CHCCOPD3,2,No
+CHCCOPD3,7,Don't know / Not sure
+CHCCOPD3,9,Refused
+ADDEPEV3,1,Yes
+ADDEPEV3,2,No
+ADDEPEV3,7,Don't know/Not sure
+ADDEPEV3,9,Refused
+CHCKDNY2,1,Yes
+CHCKDNY2,2,No
+CHCKDNY2,7,Don't know / Not sure
+CHCKDNY2,9,Refused
+HAVARTH4,1,Yes
+HAVARTH4,2,No
+HAVARTH4,7,Don't know/Not Sure
+HAVARTH4,9,Refused
+DIABETE4,1,Yes
+DIABETE4,2,"Yes, but female told only during pregnancy - Go to Section 08.01 AGE"
+DIABETE4,3,No - Go to Section 08.01 AGE
+DIABETE4,4,"No, pre-diabetes or borderline diabetes - Go to Section 08.01 AGE"
+DIABETE4,7,"Don't know/Not Sure - Go to Section
+08.01 AGE"
+DIABETE4,9,Refused - Go to Section 08.01 AGE
+DIABAGE4,98,Don't know/Not sure
+DIABAGE4,99,Refused
+MARITAL,1,Married
+MARITAL,2,Divorced
+MARITAL,3,Widowed
+MARITAL,4,Separated
+MARITAL,5,Never married
+MARITAL,6,A member of an unmarried couple
+MARITAL,9,Refused
+EDUCA,1,Never attended school or only kindergarten
+EDUCA,2,Grades 1 through 8 (Elementary)
+EDUCA,3,Grades 9 through 11 (Some high school)
+EDUCA,4,Grade 12 or GED (High school graduate)
+EDUCA,5,College 1 year to 3 years (Some college or technical school)
+EDUCA,6,College 4 years or more (College graduate)
+EDUCA,9,Refused
+RENTHOM1,1,Own
+RENTHOM1,2,Rent
+RENTHOM1,3,Other arrangement
+RENTHOM1,7,Don't know/Not Sure
+RENTHOM1,9,Refused
+NUMHHOL4,1,Yes
+NUMHHOL4,2,No - Go to Section 08.11 CPDEMO1C
+NUMHHOL4,7,Don't know/Not sure - Go to Section 08.11 CPDEMO1C
+NUMHHOL4,9,Refused - Go to Section 08.11 CPDEMO1C
+NUMPHON4,6,Residential telephone numbers Notes: 6 = 6 or more
+NUMPHON4,7,Don't know/Not Sure
+NUMPHON4,8,None
+NUMPHON4,9,Refused
+CPDEMO1C,6,Six or more
+CPDEMO1C,7,Don't know/Not sure
+CPDEMO1C,8,None
+CPDEMO1C,9,Refused
+VETERAN3,1,Yes
+VETERAN3,2,No
+VETERAN3,7,Don't know/Not Sure
+VETERAN3,9,Refused
+EMPLOY1,1,Employed for wages
+EMPLOY1,2,Self-employed
+EMPLOY1,3,Out of work for 1 year or more
+EMPLOY1,4,Out of work for less than 1 year
+EMPLOY1,5,A homemaker
+EMPLOY1,6,A student
+EMPLOY1,7,Retired
+EMPLOY1,8,Unable to work
+EMPLOY1,9,Refused
+CHILDREN,88,None
+CHILDREN,99,Refused
+INCOME3,1,"Less than $10,000"
+INCOME3,2,"Less than $15,000 ($10,000 to <
+$15,000)"
+INCOME3,3,"Less than $20,000 ($15,000 to <
+$20,000)"
+INCOME3,4,"Less than $25,000 ($20,000 to <
+$25,000)"
+INCOME3,5,"Less than $35,000 ($25,000 to <
+$35,000)"
+INCOME3,6,"Less than $50,000 ($35,000 to <
+$50,000)"
+INCOME3,7,"Less than $75,000 ($50,000 to <
+$75,000)"
+INCOME3,8,"Less than $100,000 ($75,000 to <
+$100,000)"
+INCOME3,9,"Less than $150,000 ($100,000 to <
+$150,000)"
+INCOME3,10,"Less than $200,000 ($150,000 to <
+$200,000)"
+INCOME3,11,"$200,000 or more"
+INCOME3,77,Don't know/Not sure
+INCOME3,99,Refused
+PREGNANT,1,Yes
+PREGNANT,2,No
+PREGNANT,7,Don't know/Not Sure
+PREGNANT,9,Refused
+WEIGHT2,7777,Don't know/Not sure
+WEIGHT2,9999,Refused
+HEIGHT3,7777,Don't know/Not sure
+HEIGHT3,9999,Refused
+DEAF,1,Yes
+DEAF,2,No
+DEAF,7,Don't know/Not Sure
+DEAF,9,Refused
+BLIND,1,Yes
+BLIND,2,No
+BLIND,7,Don't know/Not Sure
+BLIND,9,Refused
+DECIDE,1,Yes
+DECIDE,2,No
+DECIDE,7,Don't know/Not Sure
+DECIDE,9,Refused
+DIFFWALK,1,Yes
+DIFFWALK,2,No
+DIFFWALK,7,Don't know/Not Sure
+DIFFWALK,9,Refused
+DIFFDRES,1,Yes
+DIFFDRES,2,No
+DIFFDRES,7,Don't know/Not Sure
+DIFFDRES,9,Refused
+DIFFALON,1,Yes
+DIFFALON,2,No
+DIFFALON,7,Don't know/Not Sure
+DIFFALON,9,Refused
+FALL12MN,88,None - Go to Section 11.01 SMOKE100
+FALL12MN,77,"Don't know/Not Sure - Go to Section
+11.01 SMOKE100"
+FALL12MN,99,Refused - Go to Section 11.01 SMOKE100
+FALLINJ5,88,None
+FALLINJ5,77,Don't know/Not Sure
+FALLINJ5,99,Refused
+SMOKE100,1,Yes
+SMOKE100,2,No - Go to Section 12.03 USENOW3
+SMOKE100,7,"Don't know/Not Sure - Go to Section
+12.03 USENOW3"
+SMOKE100,9,Refused - Go to Section 12.03 USENOW3
+SMOKDAY2,1,Every day
+SMOKDAY2,2,Some days
+SMOKDAY2,3,Not at all
+SMOKDAY2,7,Don't Know/Not Sure
+SMOKDAY2,9,Refused
+USENOW3,1,Every day
+USENOW3,2,Some days
+USENOW3,3,Not at all
+USENOW3,7,Don't know/Not Sure
+USENOW3,9,Refused
+ECIGNOW2,1,Never used e-cigarettes in your entire life
+ECIGNOW2,2,Use them every day
+ECIGNOW2,3,Use them some days
+ECIGNOW2,4,Not at all (right now)
+ECIGNOW2,7,Don't know / Not sure
+ECIGNOW2,9,Refused
+ALCDAY4,777,Don't know/Not sure - Go to Section 13.01 FLUSHOT7
+ALCDAY4,888,No drinks in past 30 days - Go to Section 13.01 FLUSHOT7
+ALCDAY4,999,Refused - Go to Section 13.01 FLUSHOT7
+AVEDRNK3,88,None
+AVEDRNK3,77,Don't know/Not sure
+AVEDRNK3,99,Refused
+DRNK3GE5,88,None
+DRNK3GE5,77,Don't know/Not Sure
+DRNK3GE5,99,Refused
+MAXDRNKS,88,Invalid response
+MAXDRNKS,77,Don't know/Not sure
+MAXDRNKS,99,Refused
+FLUSHOT7,1,Yes
+FLUSHOT7,2,No - Go to Section 13.03 PNEUVAC4
+FLUSHOT7,7,Don't know/Not Sure - Go to Section 13.03 PNEUVAC4
+FLUSHOT7,9,Refused - Go to Section 13.03 PNEUVAC4
+FLSHTMY3,777777,Don't know/Not Sure
+FLSHTMY3,999999,Refused
+PNEUVAC4,1,Yes
+PNEUVAC4,2,No
+PNEUVAC4,7,Don't know/Not Sure
+PNEUVAC4,9,Refused
+SHINGLE2,1,Yes
+SHINGLE2,2,No
+SHINGLE2,7,Don't know/Not Sure
+SHINGLE2,9,Refused
+HIVTST7,1,Yes
+HIVTST7,2,No - Go to Section 15.01 SEATBELT
+HIVTST7,7,Don't know/Not Sure - Go to Section 15.01 SEATBELT
+HIVTST7,9,Refused - Go to Section 15.01 SEATBELT
+HIVTSTD3,777777,Don't know/Not sure
+HIVTSTD3,999999,Refused
+SEATBELT,1,Always
+SEATBELT,2,Nearly always
+SEATBELT,3,Sometimes
+SEATBELT,4,Seldom
+SEATBELT,5,Never
+SEATBELT,7,Don't know/Not sure
+SEATBELT,8,Never drive or ride in a car - Go to Section 16.1 COVIDPO1
+SEATBELT,9,Refused
+DRNKDRI2,88,None
+DRNKDRI2,77,Don't know/Not sure
+DRNKDRI2,99,Refused
+COVIDPO1,1,Yes
+COVIDPO1,2,No - Go to Modules or Closing Statement
+COVIDPO1,7,Don't know/Not Sure - Go to Modules or Closing Statement
+COVIDPO1,9,Refused - Go to Modules or Closing Statement
+COVIDSM1,1,Yes
+COVIDSM1,2,No - Go to Modules or Closing Statement
+COVIDSM1,7,Don't know/Not Sure - Go to Modules or Closing Statement
+COVIDSM1,9,Refused - Go to Modules or Closing Statement
+COVIDACT,1,"Yes, a lot"
+COVIDACT,2,"Yes, a little"
+COVIDACT,3,Not at all
+COVIDACT,7,Don't know/Not Sure
+COVIDACT,9,Refused
+PDIABTS1,1,Within the past year (anytime less than 12 months ago)
+PDIABTS1,2,Within the past 2 years (1 year but less than 2 years)
+PDIABTS1,3,Within the past 3 years (2 years but less than 3 years)
+PDIABTS1,4,Within the past 5 years (3 to 4 years but less than 5 years ago)
+PDIABTS1,5,Within the past 10 years (5 to 9 years but less than 10 years ago)
+PDIABTS1,6,10 or more years ago
+PDIABTS1,7,Don't know / Not sure
+PDIABTS1,8,Never
+PDIABTS1,9,Refused
+PREDIAB2,1,Yes
+PREDIAB2,2,"Yes, during pregnancy"
+PREDIAB2,3,No
+PREDIAB2,7,Don't know/Not Sure
+PREDIAB2,9,Refused
+DIABTYPE,1,Type 1
+DIABTYPE,2,Type 2
+DIABTYPE,7,Don't know/Not Sure
+DIABTYPE,9,Refused
+INSULIN1,1,Yes
+INSULIN1,2,No
+INSULIN1,7,Don't know/Not Sure
+INSULIN1,9,Refused
+CHKHEMO3,88,None
+CHKHEMO3,98,Never heard of 'A one C' test
+CHKHEMO3,77,Don't know/Not sure
+CHKHEMO3,99,Refused
+EYEEXAM1,1,Within the past month (anytime less than 1 month ago)
+EYEEXAM1,2,Within the past year (1 month but less than 12 months ago)
+EYEEXAM1,3,Within the past 2 years (1 year but less than 2 years ago)
+EYEEXAM1,4,2 or more years ago
+EYEEXAM1,7,Don't know/Not sure
+EYEEXAM1,8,Never
+EYEEXAM1,9,Refused
+DIABEYE1,1,Within the past month (anytime less than 1 month ago)
+DIABEYE1,2,Within the past year (1 month but less than 12 months ago)
+DIABEYE1,3,Within the past 2 years (1 year but less than 2 years ago)
+DIABEYE1,4,2 or more years ago
+DIABEYE1,7,Don't know/Not sure
+DIABEYE1,8,Never
+DIABEYE1,9,Refused
+DIABEDU1,1,Within the past year (anytime less than 12 months ago)
+DIABEDU1,2,Within the last 2 years (1 year but less than 2 years ago)
+DIABEDU1,3,Within the last 3 years (2 years but less than 3 years ago)
+DIABEDU1,4,Within the last 5 years (3 to 4 years but less than 5 years ago)
+DIABEDU1,5,Within the last 10 years (5 to 9 years but less than 10 years ago)
+DIABEDU1,6,10 years ago or more
+DIABEDU1,7,Don't know/Not sure
+DIABEDU1,8,Never
+DIABEDU1,9,Refused
+FEETSORE,1,Yes
+FEETSORE,2,No
+FEETSORE,7,Don't know/Not sure
+FEETSORE,9,Refused
+ARTHEXER,1,Yes
+ARTHEXER,2,No
+ARTHEXER,7,Don't know/Not Sure
+ARTHEXER,9,Refused
+ARTHEDU,1,Yes
+ARTHEDU,2,No
+ARTHEDU,7,Don't know/Not Sure
+ARTHEDU,9,Refused
+LMTJOIN3,1,Yes
+LMTJOIN3,2,No
+LMTJOIN3,7,Don't know/Not sure
+LMTJOIN3,9,Refused
+ARTHDIS2,1,Yes
+ARTHDIS2,2,No
+ARTHDIS2,7,Don't know/Not Sure
+ARTHDIS2,9,Refused
+JOINPAI2,11,52
+JOINPAI2,12,1
+JOINPAI2,22,90
+JOINPAI2,33,123
+JOINPAI2,44,105
+JOINPAI2,55,140
+JOINPAI2,66,79
+JOINPAI2,88,98
+JOINPAI2,77,Don't know/Not Sure
+JOINPAI2,99,Refused
+LCSFIRST,777,Don't know/Not Sure
+LCSFIRST,888,Never smoked cigarettes regularly - Go to Module 04.04 LCSCTSC1
+LCSFIRST,999,Refused
+LCSLAST,777,Don't know/Not Sure
+LCSLAST,999,Refused
+LCSNUMCG,777,Don't know/Not Sure
+LCSNUMCG,999,Refused
+LCSCTSC1,1,Yes
+LCSCTSC1,2,No - Go to next module
+LCSCTSC1,7,Don't know/Not sure - Go to next module
+LCSCTSC1,9,Refused - Go to next module
+LCSSCNCR,1,Yes
+LCSSCNCR,2,No - Go to next module
+LCSSCNCR,7,Don't know/Not sure - Go to next module
+LCSSCNCR,9,Refused - Go to next module
+LCSCTWHN,1,Within the past year (anytime less than 12 months ago)
+LCSCTWHN,2,Within the past 2 years (1 year but less than 2 years)
+LCSCTWHN,3,Within the past 3 years (2 years but less than 3 years)
+LCSCTWHN,4,Within the past 5 years (3 years but less than 5 years)
+LCSCTWHN,5,Within the past 10 years (5 years but less than 10 years ago)
+LCSCTWHN,6,10 or more years ago
+LCSCTWHN,7,Don't know / Not sure
+LCSCTWHN,9,Refused
+HADMAM,1,Yes
+HADMAM,2,No - Go to Module 05.03 CERVSCRN
+HADMAM,7,"Don't know/Not sure - Go to Module
+05.03 CERVSCRN"
+HADMAM,9,Refused - Go to Module 05.03 CERVSCRN
+HOWLONG,1,Within the past year (anytime less than 12 months ago)
+HOWLONG,2,Within the past 2 years (1 year but less than 2 years ago)
+HOWLONG,3,Within the past 3 years (2 years but less than 3 years ago)
+HOWLONG,4,Within the past 5 years (3 years but less than 5 years ago)
+HOWLONG,5,5 or more years ago
+HOWLONG,7,Don't know/Not sure
+CERVSCRN,1,Yes
+CERVSCRN,2,No - Go to Module 05.07 HADHYST2
+CERVSCRN,7,"Don't know/Not Sure - Go to Module
+05.07 HADHYST2"
+CERVSCRN,9,Refused - Go to Module 05.07 HADHYST2
+CRVCLCNC,1,Within the past year (anytime less than 12 months ago)
+CRVCLCNC,2,Within the past 2 years (1 year but less than 2 years ago)
+CRVCLCNC,3,Within the past 3 years (2 years but less than 3 years ago)
+CRVCLCNC,4,Within the past 5 years (3 years but less than 5 years ago)
+CRVCLCNC,5,5 or more years ago
+CRVCLCNC,7,Don't know/Not sure
+CRVCLPAP,1,Yes
+CRVCLPAP,2,No
+CRVCLPAP,7,Don't know/Not sure
+CRVCLHPV,1,Yes
+CRVCLHPV,2,No
+CRVCLHPV,7,Don't know/Not sure
+HADHYST2,1,Yes
+HADHYST2,2,No
+HADHYST2,7,Don't know/Not sure
+HADHYST2,9,Refused
+PSATEST1,1,Yes
+PSATEST1,2,No - Go to Module 06.05 PCSTALK1
+PSATEST1,7,"Don't know/Not Sure - Go to Module
+06.05 PCSTALK1"
+PSATEST1,9,Refused - Go to Module 06.05 PCSTALK1
+PSATIME1,1,Within the past year (anytime less than 12 months ago)
+PSATIME1,2,Within the past 2 years (1 year but less than 2 years ago)
+PSATIME1,3,Within the past 3 years (2 years but less than 3 years ago)
+PSATIME1,4,Within the past 5 years (3 years but less than 5 years ago)
+PSATIME1,5,5 or more years ago
+PSATIME1,7,Don't know/Not Sure
+PSATIME1,9,Refused
+PCPSARS2,1,Part of a routine exam
+PCPSARS2,2,Because of a problem
+PCPSARS2,3,Other reason
+PCPSARS2,7,Don't know/Not Sure
+PCPSARS2,9,Refused
+PSASUGS1,1,Self
+PSASUGS1,2,"Doctor, nurse, health care professional"
+PSASUGS1,3,Someone else
+PSASUGS1,7,Don't know/Not sure
+PSASUGS1,9,Refused
+PCSTALK2,1,Advantages
+PCSTALK2,2,Disadvantages
+PCSTALK2,3,Both Advantages and Disadvantages
+PCSTALK2,4,Neither
+PCSTALK2,7,Don't know/Not Sure
+PCSTALK2,9,Refused
+HADSIGM4,1,Yes
+HADSIGM4,2,No - Go to Module 07.06 COLNCNCR
+HADSIGM4,7,"Don't know/Not Sure - Go to Module
+07.06 COLNCNCR"
+HADSIGM4,9,Refused - Go to Module 07.06 COLNCNCR
+COLNSIGM,1,Colonoscopy
+COLNSIGM,2,Sigmoidoscopy - Go to Module 07.04 SIGMTES1
+COLNSIGM,3,Both
+COLNSIGM,7,"Don't know/Not Sure - Go to Module
+07.05 LASTSIG4"
+COLNSIGM,9,Refused - Go to Module 07.06 COLNCNCR
+COLNTES1,1,Within the past year (anytime less than 12 months ago)
+COLNTES1,2,Within the past 2 years (1 year but less than 2 years ago)
+COLNTES1,3,Within the past 5 years (2 years but less than 5 years ago)
+COLNTES1,4,Within the past 10 years (5 years but less than 10 years ago)
+COLNTES1,5,10 or more years ago
+COLNTES1,7,Don't know/Not sure
+COLNTES1,9,Refused
+SIGMTES1,1,"Within the past year (anytime less than 12 months ago) - Go to Module
+07.06 COLNCNCR"
+SIGMTES1,2,Within the past 2 years (1 year but less than 2 years ago) - Go to Module 07.06 COLNCNCR
+SIGMTES1,3,Within the past 5 years (2 years but less than 5 years ago) - Go to Module 07.06 COLNCNCR
+SIGMTES1,4,Within the past 10 years (5 years but less than 10 years ago) - Go to Module 07.06 COLNCNCR
+SIGMTES1,5,"10 or more years ago - Go to Module
+07.06 COLNCNCR"
+SIGMTES1,7,"Don't know/Not sure - Go to Module
+07.06 COLNCNCR"
+SIGMTES1,9,Refused - Go to Module 07.06 COLNCNCR
+LASTSIG4,1,Within the past year (anytime less than 12 months ago)
+LASTSIG4,2,Within the past 2 years (1 year but less than 2 years ago)
+LASTSIG4,3,Within the past 5 years (2 years but less than 5 years ago)
+LASTSIG4,4,Within the past 10 years (5 years but less than 10 years ago)
+LASTSIG4,5,10 or more years ago
+LASTSIG4,7,Don't know/Not sure
+COLNCNCR,1,Yes
+COLNCNCR,2,No - Go to Next Module
+COLNCNCR,7,Don't know/Not Sure - Go to Next Module
+COLNCNCR,9,Refused - Go to Next Module
+VIRCOLO1,1,Yes
+VIRCOLO1,2,No - Go to Module 07.09 SMALSTOL
+VIRCOLO1,7,"Don't know/Not Sure - Go to Module
+07.09 SMALSTOL"
+VCLNTES2,1,Within the past year (anytime less than 12 months ago)
+VCLNTES2,2,Within the past 2 years (1 year but less than 2 years ago)
+VCLNTES2,3,Within the past 5 years (2 years but less than 5 years ago)
+VCLNTES2,4,Within the past 10 years (5 years but less than 10 years ago)
+VCLNTES2,5,10 or more years ago
+VCLNTES2,7,Don't know/Not sure
+VCLNTES2,9,Refused
+SMALSTOL,1,Yes
+SMALSTOL,2,No - Go to Module 07.11 STOOLDN1
+SMALSTOL,7,Don't know/Not Sure - Go to Module 07.11 STOOLDN1
+STOLTEST,1,Within the past year (anytime less than 12 months ago)
+STOLTEST,2,Within the past 2 years (1 year but less than 2 years ago)
+STOLTEST,3,Within the past 3 years (2 years but less than 3 years ago)
+STOLTEST,4,Within the past 5 years (3 years but less than 5 years ago)
+STOLTEST,5,5 or more years ago
+STOLTEST,7,Don't know/Not sure
+STOOLDN2,1,Yes
+STOOLDN2,2,No - Go to Next Module
+STOOLDN2,7,Don't know/Not Sure - Go to Next Module
+STOOLDN2,9,Refused - Go to Next Module
+BLDSTFIT,1,Yes
+BLDSTFIT,2,No
+BLDSTFIT,7,Don't know/Not Sure
+SDNATES1,1,Within the past year (anytime less than 12 months ago)
+SDNATES1,2,Within the past 2 years (1 year but less than 2 years ago)
+SDNATES1,3,Within the past 3 years (2 years but less than 3 years ago)
+SDNATES1,4,Within the past 5 years (3 years but less than 5 years ago)
+SDNATES1,5,5 or more years ago
+SDNATES1,7,Don't know/Not sure
+CNCRDIFF,1,Only one
+CNCRDIFF,2,Two
+CNCRDIFF,3,Three or more
+CNCRDIFF,7,Don't know/Not Sure - Go to next module
+CNCRDIFF,9,Refused - Go to next module
+CNCRAGE,98,Don't know/Not Sure
+CNCRAGE,99,Refused
+CNCRTYP2,1,Bladder
+CNCRTYP2,2,Blood
+CNCRTYP2,3,Bone
+CNCRTYP2,4,Brain
+CNCRTYP2,5,Breast
+CNCRTYP2,6,Cervix/Cervical
+CNCRTYP2,7,Colon
+CNCRTYP2,8,Esophagus/Esophageal
+CNCRTYP2,9,Gallbladder
+CNCRTYP2,10,Kidney
+CNCRTYP2,11,Larynx-trachea
+CNCRTYP2,12,Leukemia
+CNCRTYP2,13,Liver
+CNCRTYP2,14,Lung
+CNCRTYP2,15,Lymphoma
+CNCRTYP2,16,Melanoma
+CNCRTYP2,17,Mouth/tongue/lip
+CNCRTYP2,18,Ovary/Ovarian
+CNCRTYP2,19,Pancreas/Pancreatic
+CNCRTYP2,20,Prostate
+CNCRTYP2,21,Rectum/Rectal
+CNCRTYP2,22,Skin (non-melanoma)
+CNCRTYP2,23,Skin (Don't know what kind)
+CNCRTYP2,24,Soft tissue (muscle or fat)
+CNCRTYP2,25,Stomach
+CNCRTYP2,26,Testis/Testicular
+CNCRTYP2,27,Throat - pharynx
+CNCRTYP2,28,Thyroid
+CNCRTYP2,29,Uterus/Uterine
+CNCRTYP2,30,Other
+CNCRTYP2,77,Don't know/Not sure
+CNCRTYP2,99,Refused
+CSRVTRT3,1,Yes - Go to next module
+CSRVTRT3,2,"No, I've completed treatment"
+CSRVTRT3,3,"No, I've refused treatment - Go to next module"
+CSRVTRT3,4,"No, I haven't started treatment - Go to next module"
+CSRVTRT3,5,Treatment was not necessary - Go to next module
+CSRVTRT3,7,Don't know/Not Sure - Go to next module
+CSRVTRT3,9,Refused - Go to next module
+CSRVDOC1,1,Cancer Surgeon
+CSRVDOC1,2,Family Practitioner
+CSRVDOC1,3,General Surgeon
+CSRVDOC1,4,Gynecologic Oncologist
+CSRVDOC1,5,"General Practitioner, Internist"
+CSRVDOC1,6,"Plastic Surgeon, Reconstructive Surgeon"
+CSRVDOC1,7,Medical Oncologist
+CSRVDOC1,8,Radiation Oncologist
+CSRVDOC1,9,Urologist
+CSRVDOC1,10,Other
+CSRVDOC1,77,Don't know/Not Sure
+CSRVDOC1,99,Refused
+CSRVSUM,1,Yes
+CSRVSUM,2,No
+CSRVSUM,7,Don't know/Not Sure
+CSRVSUM,9,Refused
+CSRVRTRN,1,Yes
+CSRVRTRN,2,No - Go to Module 09.06 CSRVINSR
+CSRVRTRN,7,Don't know/Not Sure - Go to Module 09.06 CSRVINSR
+CSRVRTRN,9,Refused - Go to Module 09.06 CSRVINSR
+CSRVINST,1,Yes
+CSRVINST,2,No
+CSRVINST,7,Don't know/Not Sure
+CSRVINST,9,Refused
+CSRVINSR,1,Yes
+CSRVINSR,2,No
+CSRVINSR,7,Don't know/Not Sure
+CSRVINSR,9,Refused
+CSRVDEIN,1,Yes
+CSRVDEIN,2,No
+CSRVDEIN,7,Don't know/Not Sure
+CSRVDEIN,9,Refused
+CSRVCLIN,1,Yes
+CSRVCLIN,2,No
+CSRVCLIN,7,Don't know/Not Sure
+CSRVCLIN,9,Refused
+CSRVPAIN,1,Yes
+CSRVPAIN,2,No - Go to next module
+CSRVPAIN,7,Don't know/Not Sure - Go to next module
+CSRVPAIN,9,Refused - Go to next module
+CSRVCTL2,1,With medication (or treatment)
+CSRVCTL2,2,Without medication (or treatment)
+CSRVCTL2,3,"Not under control, with medication (or treatment)"
+CSRVCTL2,4,"Not under control, without medication (or treatment)"
+CSRVCTL2,7,Don't know/Not Sure
+CSRVCTL2,9,Refused
+CIMEMLO1,1,Yes
+CIMEMLO1,2,No - Go to next module
+CIMEMLO1,7,Don't know/Not sure - Go to next module
+CIMEMLO1,9,Refused - Go to next module
+CDWORRY,1,Yes
+CDWORRY,2,No
+CDWORRY,7,Don't know/Not sure
+CDWORRY,9,Refused
+CDDISCU1,1,Yes
+CDDISCU1,2,No
+CDDISCU1,7,Don't know/Not Sure
+CDDISCU1,9,Refused
+CDHOUS1,1,Yes
+CDHOUS1,2,No
+CDHOUS1,7,Don't know/Not Sure
+CDHOUS1,9,Refused
+CDSOCIA1,1,Yes
+CDSOCIA1,2,No
+CDSOCIA1,7,Don't know/Not Sure
+CDSOCIA1,9,Refused
+CAREGIV1,1,Yes
+CAREGIV1,2,No - Go to Module 14.09 CRGVEXPT
+CAREGIV1,7,Don't know/Not Sure - Go to Module 14.09 CRGVEXPT
+CAREGIV1,8,Caregiving recipient died in past 30 days - Go to next module
+CAREGIV1,9,Refused - Go to Module 14.09 CRGVEXPT
+CRGVREL4,1,Mother
+CRGVREL4,2,Father
+CRGVREL4,3,Mother-in-law
+CRGVREL4,4,Father-in-law
+CRGVREL4,5,Child
+CRGVREL4,6,Husband
+CRGVREL4,7,Wife
+CRGVREL4,8,Live-in partner
+CRGVREL4,9,Brother or brother-in-law
+CRGVREL4,10,Sister or sister-in-law
+CRGVREL4,11,Grandmother
+CRGVREL4,12,Grandfather
+CRGVREL4,13,Grandchild
+CRGVREL4,14,Other relative
+CRGVREL4,15,Non-relative/Family friend
+CRGVREL4,77,Don't know/Not Sure
+CRGVREL4,99,Refused
+CRGVLNG1,1,Less than 30 days
+CRGVLNG1,2,1 month to less than 6 months
+CRGVLNG1,3,6 months to less than 2 years
+CRGVLNG1,4,2 years to less than 5 years
+CRGVLNG1,5,5 or more years
+CRGVLNG1,7,Don't know/Not sure
+CRGVLNG1,9,Refused
+CRGVHRS1,1,Up to 8 hours per week
+CRGVHRS1,2,9 to 19 hours per week
+CRGVHRS1,3,20 to 39 hours per week
+CRGVHRS1,4,40 hours or more
+CRGVHRS1,7,Don't know/Not sure
+CRGVHRS1,9,Refused
+CRGVPRB3,1,Arthritis/ rheumatism
+CRGVPRB3,2,Asthma
+CRGVPRB3,3,Cancer
+CRGVPRB3,4,Chronic respiratory conditions such as emphysema or COPD
+CRGVPRB3,5,"Alzheimer's disease, dementia or other cognitive impairment disorder
+- Go to Module 14.07 CRGVPER1"
+CRGVPRB3,6,"Developmental disabilities such as autism, Down's Syndrome, and spina bifida"
+CRGVPRB3,7,Diabetes
+CRGVPRB3,8,"Heart disease, hypertension, stroke"
+CRGVPRB3,9,Human Immunodeficiency Virus Infection (H.I.V.)
+CRGVPRB3,10,"Mental illnesses, such as anxiety, depression, or schizophrenia"
+CRGVPRB3,11,Other organ failure or diseases such as kidney or liver problems
+CRGVPRB3,12,Substance abuse or addiction disorders
+CRGVPRB3,13,"Injuries, including broken bones"
+CRGVPRB3,14,Old age/ infirmity/frailty
+CRGVPRB3,15,Other
+CRGVPRB3,77,Don't know/Not Sure
+CRGVPRB3,99,Refused
+CRGVALZD,1,Yes
+CRGVALZD,2,No
+CRGVALZD,7,Don't know/Not Sure
+CRGVALZD,9,Refused
+CRGVPER1,1,Yes
+CRGVPER1,2,No
+CRGVPER1,7,Don't know/Not Sure
+CRGVPER1,9,Refused
+CRGVHOU1,1,Yes
+CRGVHOU1,2,No
+CRGVHOU1,7,Don't know/Not Sure
+CRGVHOU1,9,Refused
+CRGVEXPT,1,Yes
+CRGVEXPT,2,No
+CRGVEXPT,7,Don't know/Not Sure
+CRGVEXPT,9,Refused
+LASTSMK2,1,Within the past month (less than 1 month ago) - Go to next module
+LASTSMK2,2,Within the past 3 months (1 month but less than 3 months ago) - Go to next module
+LASTSMK2,3,Within the past 6 months (3 months but less than 6 months ago) - Go to next module
+LASTSMK2,4,Within the past year (6 months but less than 1 year ago) - Go to next module
+LASTSMK2,5,Within the past 5 years (1 year but less than 5 years ago) - Go to next module
+LASTSMK2,6,Within the past 10 years (5 years but less than 10 years ago) - Go to next module
+LASTSMK2,7,10 years or more - Go to next module
+LASTSMK2,8,Never smoked regularly - Go to next module
+LASTSMK2,77,Don't know/Not sure - Go to next module
+LASTSMK2,99,Refused - Go to next module
+STOPSMK2,1,Yes
+STOPSMK2,2,No
+STOPSMK2,7,Don't know/Not Sure
+STOPSMK2,9,Refused
+MENTCIGS,1,Yes
+MENTCIGS,2,No
+MENTCIGS,7,Don't know/Not Sure
+MENTCIGS,9,Refused
+MENTECIG,1,Yes
+MENTECIG,2,No
+MENTECIG,7,Don't know/Not Sure
+MENTECIG,9,Refused
+HEATTBCO,1,Yes
+HEATTBCO,2,No
+HEATTBCO,7,Don't know/Not Sure
+HEATTBCO,9,Refused
+FIREARM5,1,Yes
+FIREARM5,2,No - Go to Next Module
+FIREARM5,7,Don't know/Not Sure - Go to Next Module
+FIREARM5,9,Refused - Go to Next Module
+GUNLOAD,1,Yes
+GUNLOAD,2,No - Go to Next Module
+GUNLOAD,7,Don't know/Not sure - Go to Next Module
+GUNLOAD,9,Refused - Go to Next Module
+LOADULK2,1,Yes
+LOADULK2,2,No
+LOADULK2,7,Don't know/Not sure
+LOADULK2,9,Refused
+HASYMP1,1,Yes
+HASYMP1,2,No
+HASYMP1,7,Don't know/Not sure
+HASYMP1,9,Refused
+HASYMP2,1,Yes
+HASYMP2,2,No
+HASYMP2,7,Don't know/Not sure
+HASYMP2,9,Refused
+HASYMP3,1,Yes
+HASYMP3,2,No
+HASYMP3,7,Don't know/Not sure
+HASYMP3,9,Refused
+HASYMP4,1,Yes
+HASYMP4,2,No
+HASYMP4,7,Don't know/Not sure
+HASYMP4,9,Refused
+HASYMP5,1,Yes
+HASYMP5,2,No
+HASYMP5,7,Don't know/Not sure
+HASYMP5,9,Refused
+HASYMP6,1,Yes
+HASYMP6,2,No
+HASYMP6,7,Don't know/Not sure
+HASYMP6,9,Refused
+STRSYMP1,1,Yes
+STRSYMP1,2,No
+STRSYMP1,7,Don't know/Not sure
+STRSYMP1,9,Refused
+STRSYMP2,1,Yes
+STRSYMP2,2,No
+STRSYMP2,7,Don't know/Not sure
+STRSYMP2,9,Refused
+STRSYMP3,1,Yes
+STRSYMP3,2,No
+STRSYMP3,7,Don't know/Not sure
+STRSYMP3,9,Refused
+STRSYMP4,1,Yes
+STRSYMP4,2,No
+STRSYMP4,7,Don't know/Not sure
+STRSYMP4,9,Refused
+STRSYMP5,1,Yes
+STRSYMP5,2,No
+STRSYMP5,7,Don't know/Not sure
+STRSYMP5,9,Refused
+STRSYMP6,1,Yes
+STRSYMP6,2,No
+STRSYMP6,7,Don't know/Not sure
+STRSYMP6,9,Refused
+FIRSTAID,1,Take them the hospital
+FIRSTAID,2,Tell them to call their doctor
+FIRSTAID,3,Call 911
+FIRSTAID,4,Call their spouse or a family member
+FIRSTAID,5,Do something else
+FIRSTAID,7,Don't know/Not sure
+FIRSTAID,9,Refused
+ASPIRIN,1,Daily
+ASPIRIN,2,Some days
+ASPIRIN,3,"Used to take it but had to stop due to side effects, or"
+ASPIRIN,4,Do not take it
+ASPIRIN,7,Don't know/Not Sure
+ASPIRIN,9,Refused
+SOMALE,1,Gay
+SOMALE,2,"Straight, that is, not gay"
+SOMALE,3,Bisexual
+SOMALE,4,Something else
+SOMALE,7,I Don't know the answer
+SOMALE,9,Refused
+SOFEMALE,1,Lesbian or Gay
+SOFEMALE,2,"Straight, that is, not gay"
+SOFEMALE,3,Bisexual
+SOFEMALE,4,Something else
+SOFEMALE,7,I Don't know the answer
+SOFEMALE,9,Refused
+MARIJAN1,88,None - Go to next module
+MARIJAN1,77,Don't know/Not Sure - Go to next module
+MARIJAN1,99,Refused - Go to next module
+MARJSMOK,1,Yes
+MARJSMOK,2,No
+MARJSMOK,7,Don't know/Not sure
+MARJSMOK,9,Refused
+MARJEAT,1,Yes
+MARJEAT,2,No
+MARJEAT,7,Don't know/Not sure
+MARJEAT,9,Refused
+MARJVAPE,1,Yes
+MARJVAPE,2,No
+MARJVAPE,7,Don't know/Not sure
+MARJVAPE,9,Refused
+MARJDAB,1,Yes
+MARJDAB,2,No
+MARJDAB,7,Don't know/Not sure
+MARJDAB,9,Refused
+MARJOTHR,1,Yes
+MARJOTHR,2,No
+MARJOTHR,7,Don't know/Not sure
+MARJOTHR,9,Refused
+ACEDEPRS,1,Yes
+ACEDEPRS,2,No
+ACEDEPRS,7,Don't know/Not Sure
+ACEDEPRS,9,Refused
+ACEDRINK,1,Yes
+ACEDRINK,2,No
+ACEDRINK,7,Don't know/Not Sure
+ACEDRINK,9,Refused
+ACEDRUGS,1,Yes
+ACEDRUGS,2,No
+ACEDRUGS,7,Don't know/Not Sure
+ACEDRUGS,9,Refused
+ACEPRISN,1,Yes
+ACEPRISN,2,No
+ACEPRISN,7,Don't know/Not Sure
+ACEPRISN,9,Refused
+ACEDIVRC,1,Yes
+ACEDIVRC,2,No
+ACEDIVRC,7,Don't know/Not Sure
+ACEDIVRC,8,Parents not married
+ACEDIVRC,9,Refused
+ACEPUNCH,1,Never
+ACEPUNCH,2,Once
+ACEPUNCH,3,More than once
+ACEPUNCH,7,Don't know/Not Sure
+ACEPUNCH,9,Refused
+ACEHURT1,1,Never
+ACEHURT1,2,Once
+ACEHURT1,3,More than once
+ACEHURT1,7,Don't know/Not Sure
+ACEHURT1,9,Refused
+ACESWEAR,1,Never
+ACESWEAR,2,Once
+ACESWEAR,3,More than once
+ACESWEAR,7,Don't know/Not Sure
+ACESWEAR,9,Refused
+ACETOUCH,1,Never
+ACETOUCH,2,Once
+ACETOUCH,3,More than once
+ACETOUCH,7,Don't know/Not Sure
+ACETOUCH,9,Refused
+ACETTHEM,1,Never
+ACETTHEM,2,Once
+ACETTHEM,3,More than once
+ACETTHEM,7,Don't know/Not Sure
+ACETTHEM,9,Refused
+ACEHVSEX,1,Never
+ACEHVSEX,2,Once
+ACEHVSEX,3,More than once
+ACEHVSEX,7,Don't know/Not Sure
+ACEHVSEX,9,Refused
+ACEADSAF,1,Never
+ACEADSAF,2,A little of the time
+ACEADSAF,3,Some of the time
+ACEADSAF,4,Most of the time
+ACEADSAF,5,All of the time
+ACEADSAF,7,Don't know/Not sure
+ACEADSAF,9,Refused
+ACEADNED,1,Never
+ACEADNED,2,A little of the time
+ACEADNED,3,Some of the time
+ACEADNED,4,Most of the time
+ACEADNED,5,All of the time
+ACEADNED,7,Don't know/Not sure
+ACEADNED,9,Refused
+IMFVPLA4,1,A doctor's office or health maintenance organization (HMO)
+IMFVPLA4,2,A health department
+IMFVPLA4,3,Another type of clinic or health center (a community health center)
+IMFVPLA4,4,"A senior, recreation, or community center"
+IMFVPLA4,5,"A store (supermarket, drug store)"
+IMFVPLA4,6,A hospital (inpatient or outpatient)
+IMFVPLA4,7,An emergency room
+IMFVPLA4,8,Workplace
+IMFVPLA4,9,Some other kind of place
+IMFVPLA4,10,Received vaccination in Canada/Mexico
+IMFVPLA4,11,A school
+IMFVPLA4,77,Don't know / Not sure
+IMFVPLA4,99,Refused
+HPVADVC4,1,Yes
+HPVADVC4,2,No - Go to Next Module
+HPVADVC4,7,Don't know/Not Sure - Go to Next Module
+HPVADVC4,9,Refused - Go to Next Module
+HPVADSHT,3,All shots
+HPVADSHT,4,2
+HPVADSHT,10,1
+HPVADSHT,77,Don't know/Not Sure
+HPVADSHT,99,Refused
+TETANUS1,1,"Yes, received Tdap"
+TETANUS1,2,"Yes, received tetanus shot, but not Tdap"
+TETANUS1,3,"Yes, received tetanus shot but not sure what type"
+TETANUS1,4,"No, did not receive any tetanus shot in the past 10 years"
+TETANUS1,7,Don't know/Not Sure
+TETANUS1,9,Refused
+COVIDVA1,1,Yes - Go to Module 28.03 COVIDNU1
+COVIDVA1,2,No
+COVIDVA1,7,Don't know/Not sure - Go to Next Module
+COVIDVA1,9,Refused - Go to Next Module
+COVACGE1,1,Will definitely get a vaccine - Go to Next Module
+COVACGE1,2,Will probably get a vaccine - Go to Next Module
+COVACGE1,3,Will probably not get a vaccine - Go to Next Module
+COVACGE1,4,Will definitely not get a vaccine - Go to Next Module
+COVACGE1,7,Don't know/Not sure - Go to Next Module
+COVACGE1,9,Refused - Go to Next Module
+COVIDNU2,1,One
+COVIDNU2,2,Two
+COVIDNU2,3,Three
+COVIDNU2,4,Four
+COVIDNU2,5,Five or more
+COVIDNU2,7,Don't know/Not sure
+COVIDNU2,9,Refused
+LSATISFY,1,Very satisfied
+LSATISFY,2,Satisfied
+LSATISFY,3,Dissatisfied
+LSATISFY,4,Very dissatisfied
+LSATISFY,7,Don't know/Not sure
+LSATISFY,9,Refused
+EMTSUPRT,1,Always
+EMTSUPRT,2,Usually
+EMTSUPRT,3,Sometimes
+EMTSUPRT,4,Rarely
+EMTSUPRT,5,Never
+EMTSUPRT,7,Don't know/Not sure
+EMTSUPRT,9,Refused
+SDLONELY,1,Always
+SDLONELY,2,Usually
+SDLONELY,3,Sometimes
+SDLONELY,4,Rarely
+SDLONELY,5,Never
+SDLONELY,7,Don't know/Not sure
+SDLONELY,9,Refused
+SDHEMPLY,1,Yes
+SDHEMPLY,2,No
+SDHEMPLY,7,Don't know/Not Sure
+SDHEMPLY,9,Refused
+FOODSTMP,1,Yes
+FOODSTMP,2,No
+FOODSTMP,7,Don't know/Not Sure
+FOODSTMP,9,Refused
+SDHFOOD1,1,Always
+SDHFOOD1,2,Usually
+SDHFOOD1,3,Sometimes
+SDHFOOD1,4,Rarely
+SDHFOOD1,5,Never
+SDHFOOD1,7,Don't know/Not Sure
+SDHFOOD1,9,Refused
+SDHBILLS,1,Yes
+SDHBILLS,2,No
+SDHBILLS,7,Don't know/Not Sure
+SDHBILLS,9,Refused
+SDHUTILS,1,Yes
+SDHUTILS,2,No
+SDHUTILS,7,Don't know/Not Sure
+SDHUTILS,9,Refused
+SDHTRNSP,1,Yes
+SDHTRNSP,2,No
+SDHTRNSP,7,Don't know/Not Sure
+SDHTRNSP,9,Refused
+SDHSTRE1,1,Always
+SDHSTRE1,2,Usually
+SDHSTRE1,3,Sometimes
+SDHSTRE1,4,Rarely
+SDHSTRE1,5,Never
+SDHSTRE1,7,Don't know/Not Sure
+SDHSTRE1,9,Refused
+RRCLASS3,1,White
+RRCLASS3,2,Black or African American
+RRCLASS3,3,Hispanic or Latino
+RRCLASS3,4,Asian
+RRCLASS3,5,Native Hawaiian or Other Pacific Islander
+RRCLASS3,6,American Indian or Alaska Native
+RRCLASS3,7,Mixed Race
+RRCLASS3,8,Some other group
+RRCLASS3,77,Don't know/Not sure
+RRCLASS3,99,Refused
+RRCOGNT2,1,Never
+RRCOGNT2,2,Once a year
+RRCOGNT2,3,Once a month
+RRCOGNT2,4,Once a week
+RRCOGNT2,5,Once a day
+RRCOGNT2,6,Once an hour
+RRCOGNT2,7,Don't know/Not sure
+RRCOGNT2,8,Constantly
+RRCOGNT2,9,Refused
+RRTREAT,1,Worse than other races
+RRTREAT,2,The same as other races
+RRTREAT,3,Better than other races
+RRTREAT,4,"Worse than some races, better than others"
+RRTREAT,5,Only encountered people of the same race
+RRTREAT,7,Don't know/Not Sure
+RRTREAT,9,Refused
+RRATWRK2,1,Worse than other races
+RRATWRK2,2,The same as other races
+RRATWRK2,3,Better than other races
+RRATWRK2,4,"Worse than some races, better than others"
+RRATWRK2,5,Only encountered people of the same race
+RRATWRK2,7,Don't know/Not sure
+RRATWRK2,9,Refused
+RRHCARE4,1,Worse than other races
+RRHCARE4,2,The same as other races
+RRHCARE4,3,Better than other races
+RRHCARE4,4,"Worse than some races, better than others"
+RRHCARE4,5,Only encountered people of the same race
+RRHCARE4,7,Don't know/Not sure
+RRHCARE4,9,Refused
+RRPHYSM2,1,Yes
+RRPHYSM2,2,No
+RRPHYSM2,7,Don't know/Not Sure
+RRPHYSM2,9,Refused
+RCSBORG1,1,Boy - Go to Module 31.04 RCHISLA1
+RCSBORG1,2,Girl - Go to Module 31.04 RCHISLA1
+RCSBORG1,9,Refused
+RCSRLTN2,1,"Parent (include biologic, step, or adoptive parent)"
+RCSRLTN2,2,Grandparent
+RCSRLTN2,3,Foster parent or guardian
+RCSRLTN2,4,"Sibling (include biologic, step, and adoptive sibling)"
+RCSRLTN2,5,Other relative
+RCSRLTN2,6,Not related in any way
+RCSRLTN2,7,Don't know/Not sure
+RCSRLTN2,9,Refused
+CASTHDX2,1,Yes
+CASTHDX2,2,No - Go to next module
+CASTHDX2,7,Don't know/Not Sure - Go to next module
+CASTHDX2,9,Refused - Go to next module
+CASTHNO2,1,Yes
+CASTHNO2,2,No
+CASTHNO2,7,Don't know/Not Sure
+CASTHNO2,9,Refused
+QSTVER,10,Landline single questionnaire
+QSTVER,11,Landline multiple questionnaire version 1
+QSTVER,12,Landline multiple questionnaire version 2
+QSTVER,13,Landline multiple questionnaire version 3
+QSTVER,20,Cell Phone single questionnaire
+QSTVER,21,Cell Phone multiple questionnaire version 1
+QSTVER,22,Cell Phone multiple questionnaire version 2
+QSTVER,23,Cell Phone multiple questionnaire version 3
+QSTLANG,1,English
+QSTLANG,2,Spanish
+_METSTAT,1,"Metropolitan counties (_URBNRRL = 1,2,3,4)"
+_METSTAT,2,"Nonmetropolitan counties (_URBNRRL = 5,6)"
+_URBSTAT,1,"Urban counties (_URBNRRL = 1,2,3,4,5)"
+_URBSTAT,2,Rural counties (_URBNRRL = 6)
+MSCODE,1,In the center city of an MSA
+MSCODE,2,Outside the center city of an MSA but inside the county containing the center city
+MSCODE,3,Inside a suburban county of the MSA
+MSCODE,5,Not in an MSA
+_IMPRACE,1,"White, Non-Hispanic"
+_IMPRACE,2,"Black, Non-Hispanic"
+_IMPRACE,3,"Asian, Non-Hispanic"
+_IMPRACE,4,"American Indian/Alaskan Native, Non-Hispanic"
+_IMPRACE,5,Hispanic
+_IMPRACE,6,"Other race, Non-Hispanic"
+_CHISPNC,1,"Child of Hispanic, Latino/a, or Spanish origin"
+_CHISPNC,2,"Child not of Hispanic, Latino/a, or Spanish origin"
+_CHISPNC,9,Don't know/Not Sure/Refused/Missing
+_CRACE1,1,White only
+_CRACE1,2,Black or African American only
+_CRACE1,3,American Indian or Alaskan Native only
+_CRACE1,4,Asian Only
+_CRACE1,5,Native Hawaiian or other Pacific Islander only
+_CRACE1,6,Other race only
+_CRACE1,7,Multiracial
+_CRACE1,77,Don't know/Not sure
+_CRACE1,99,Refused
+CAGEG,1,0 months to < 5 years of age Notes: 0 LE CHILDAGE LT 60
+CAGEG,2,5 to < 10 years of age Notes: 60 LE CHILDAGE LT 120
+CAGEG,3,10 to < 15 years of age Notes: 120 LE CHILDAGE LT 180
+CAGEG,4,15 to < 18 years of age Notes: 180 LE CHILDAGE LT 216
+_DUALUSE,1,Landline frame with a cell phone
+_DUALUSE,2,Cell phone frame with a landline
+_DUALUSE,9,No Dual Phone Use
+_RFHLTH,1,"Good or Better Health
+Notes: GENHLTH = 1 or 2 or 3"
+_RFHLTH,2,Fair or Poor Health Notes: GENHLTH = 4 or 5
+_RFHLTH,9,"Don't know/Not Sure Or Refused/Missing
+Notes: GENHLTH = 7 or 9 or Missing"
+_PHYS14D,1,Zero days when physical health not good
+_PHYS14D,2,1-13 days when physical health not good
+_PHYS14D,3,14+ days when physical health not good
+_PHYS14D,9,Don't know/Refused/Missing
+_MENT14D,1,Zero days when mental health not good
+_MENT14D,2,1-13 days when mental health not good
+_MENT14D,3,14+ days when mental health not good
+_MENT14D,9,Don't know/Refused/Missing
+_HLTHPL1,1,"Have some form of insurance
+Notes: PRIMINS1=1, 2, 3, 4, 5, 6, 7,
+8, 9, 10"
+_HLTHPL1,2,"Do not have some form of health insurance
+Notes: PRIMINS1=88"
+_HLTHPL1,9,"Don't know, refused or missing insurance response
+Notes: PRIMINS1=77, 99, or Missing"
+_HCVU653,1,"Have some form of health insurance Notes: 18 <= AGE <=64 and
+PRIMINS1=1, 2, 3, 4, 5, 6, 7, 8, 9,
+10"
+_HCVU653,2,"Do not have any form of health insurance
+Notes: 18 <= AGE <= 64 and PRIMINS1=88"
+_HCVU653,9,"Don't know/Not Sure, Refused or Missing
+Notes: 18 <= AGE <= 64 and PRIMINS1=77, 99, or Missing or AGE
+=> 65"
+_TOTINDA,1,Had physical activity or exercise Notes: EXERANY2 = 1
+_TOTINDA,2,"No physical activity or exercise in last 30 days
+Notes: EXERANY2 = 2"
+_TOTINDA,9,"Don't know/Refused/Missing
+Notes: EXERANY2 = 7 or 9 or Missing"
+METVL12_,0,Activity MET Value
+METVL22_,0,Activity MET Value
+MAXVO21_,99900,Don't know/Not Sure/Refused/Missing
+FC601_,99900,Don't know/Not Sure/Refused/Missing
+ACTIN13_,0,Not Moderate or Vigorous or No Activity
+ACTIN13_,1,Moderate
+ACTIN13_,2,Vigorous
+ACTIN23_,0,Not Moderate or Vigorous or No Activity
+ACTIN23_,1,Moderate
+ACTIN23_,2,Vigorous
+PAFREQ1_,99000,Don't know/Not Sure/Refused
+PAFREQ2_,99000,Don't know/Not Sure/Refused
+_MINAC12,0,Minutes of Activity per week
+_MINAC22,0,Minutes of Activity per week
+STRFREQ_,99000,Don't know/Not Sure/Refused
+PAMISS3_,0,Not Missing Physical Activity Data
+PAMISS3_,1,Missing Physical Activity Data
+PAMISS3_,9,Don't know/Not Sure/Refused
+PAMIN13_,118602,2
+PA3MIN_,118602,2
+_PACAT3,1,Highly Active
+_PACAT3,2,Active
+_PACAT3,3,Insufficiently Active
+_PACAT3,4,Inactive
+_PACAT3,9,Don't know/Not Sure/Refused/Missing
+_PAINDX3,1,Meet Aerobic Recommendations
+_PAINDX3,2,Did Not Meet Aerobic Recommendations
+_PAINDX3,9,Don't know/Not Sure/Refused/Missing
+_PA150R4,1,150+ minutes (or vigorous equivalent minutes) of physical activity
+_PA150R4,2,1-149 minutes (or vigorous equivalent minutes) of physical activity
+_PA150R4,3,0 minutes (or vigorous equivalent minutes) of physical activity
+_PA150R4,9,Don't know/Not Sure/Refused/Missing
+_PA300R4,1,301+ minutes (or vigorous equivalent minutes) of physical activity
+_PA300R4,2,1-300 minutes (or vigorous equivalent minutes) of physical activity
+_PA300R4,3,0 minutes (or vigorous equivalent minutes) of physical activity
+_PA300R4,9,Don't know/Not Sure/Refused/Missing
+_PA30023,1,301+ minutes (or vigorous equivalent minutes) of physical activity
+_PA30023,2,0-300 minutes (or vigorous equivalent minutes) of physical activity
+_PA30023,9,Don't know/Not Sure/Refused/Missing
+_PASTRNG,1,Meet muscle strengthening recommendations
+_PASTRNG,2,Did not meet muscle strengthening recommendations
+_PASTRNG,9,Don't know/Not Sure/Refused/Missing
+_PAREC3,1,Met Both Guidelines
+_PAREC3,2,Met Aerobic Guidelines Only
+_PAREC3,3,Met Strengthening Guidelines Only
+_PAREC3,4,Did not meet Either Guideline
+_PAREC3,9,Don't know/Not Sure/Refused/Missing
+_PASTAE3,1,Met Both Guidelines
+_PASTAE3,2,Did Not Meet Both Guidelines
+_PASTAE3,9,Don't know/Not Sure/Refused/Missing
+_RFHYPE6,1,"No
+Notes: BPHIGH6 = 2 or 3 or 4"
+_RFHYPE6,2,"Yes
+Notes: BPHIGH6 = 1"
+_RFHYPE6,9,Don't know/Not Sure/Refused/Missing Notes: BPHIGH6 = 7 or 9 or Missing
+_CHOLCH3,1,"Had cholesterol checked in past 5 years
+Notes: CHOLCHK3 = 2 or 3 or 4 or 5
+or 6"
+_CHOLCH3,2,"Did not have cholesterol checked in past 5 years
+Notes: CHOLCHK3 = 8"
+_CHOLCH3,3,Have never had cholesterol checked Notes: CHOLCHK3 = 1
+_CHOLCH3,9,"Don't know/Not Sure Or Refused/Missing
+Notes: CHOLCHK3 = 7 or 9 or Missing"
+_RFCHOL3,1,"No
+Notes: CHOLCHK3 = 2,3,4,5,6 or 8 and TOLDHI3
+= 2"
+_RFCHOL3,2,"Yes
+Notes: CHOLCHK3 = 2,3,4,5,6 or 8 and TOLDHI3
+= 1"
+_RFCHOL3,9,"Don't know/Not Sure Or Refused/Missing Notes: CHOLCHK3 = 2,3,4,5,6 or 8 and TOLDHI3
+= 7 or 9 or Missing"
+_MICHD,1,Reported having MI or CHD Notes: CVDINFR4=1 OR CVDCRHD4=1
+_MICHD,2,Did not report having MI or CHD Notes: CVDINFR4=2 AND CVDCRHD4=2
+_LTASTH1,1,"No
+Notes: ASTHMA3 = 2"
+_LTASTH1,2,"Yes
+Notes: ASTHMA3 = 1"
+_LTASTH1,9,"Don't know/Not Sure Or Refused/Missing
+Notes: ASTHMA3 = 7 or 9 or Missing"
+_CASTHM1,1,"No
+Notes: ASTHMA3 = 2 or ASTHMA3 = 1 and ASTHNOW = 2"
+_CASTHM1,2,"Yes
+Notes: ASTHMA3 = 1 and ASTHNOW = 1"
+_CASTHM1,9,"Don't know/Not Sure Or Refused/Missing
+Notes: ASTHMA3 = 7 or 9 or Missing or ASTHNOW = 7 or 9 or Missing"
+_ASTHMS1,1,"Current
+Notes: ASTHMA3 = 1 and ASTHNOW = 1"
+_ASTHMS1,2,"Former
+Notes: ASTHMA3 = 1 and ASTHNOW = 2"
+_ASTHMS1,3,"Never
+Notes: ASTHMA3 = 2"
+_ASTHMS1,9,"Don't know/Not Sure Or Refused/Missing
+Notes: ASTHMA3 = 7 or 9 or Missing or ASTHNOW = 7 or 9 or Missing"
+_DRDXAR2,1,Diagnosed with arthritis Notes: HAVARTH4=1
+_DRDXAR2,2,Not diagnosed with arthritis Notes: HAVARTH4=2
+_MRACE1,1,"White only
+Notes: MRACASC1 = 10"
+_MRACE1,2,Black or African American only Notes: MRACASC1 = 20
+_MRACE1,3,"American Indian or Alaskan Native only
+Notes: MRACASC1 = 30"
+_MRACE1,4,"Asian Only
+Notes: MRACASC1 = 40,41,42,43,44,45,46,47"
+_MRACE1,5,"Native Hawaiian or other Pacific Islander only
+Notes: MRACASC1 = 50,51,52,53,54"
+_MRACE1,6,Other race only Notes: MRACASC1 = 60
+_MRACE1,7,"Multiracial
+Notes: MRACASC1 >= 100"
+_MRACE1,77,Don't know/Not sure Notes: MRACASC1 = 77
+_MRACE1,99,"Refused
+Notes: MRACASC1 = 99"
+_HISPANC,1,"Hispanic, Latino/a, or Spanish origin"
+_HISPANC,2,"Not of Hispanic, Latino/a, or Spanish origin"
+_HISPANC,9,"Don't Know, Refused or Missing"
+_RACE,1,"White only, non-Hispanic
+Notes: _HISPANC = 2 and _MRACE1 = 10"
+_RACE,2,"Black only, non-Hispanic
+Notes: _HISPANC = 2 and _MRACE1 = 20"
+_RACE,3,"American Indian or Alaskan Native only, Non-Hispanic
+Notes: _HISPANC = 2 and _MRACE1 = 30"
+_RACE,4,"Asian only, non-Hispanic
+Notes: _HISPANC = 2 and _MRACE1 = 40,41,42,43,44,45,46,47"
+_RACE,5,"Native Hawaiian or other Pacific Islander only, Non-Hispanic Notes: _HISPANC = 2 and _MRACE1 = 50,51,52,53,54"
+_RACE,6,"Other race only, non-Hispanic
+Notes: _HISPANC = 2 and _MRACE1 = 60"
+_RACE,7,"Multiracial, non-Hispanic
+Notes: _HISPANC = 2 and _MRACE1 = 77"
+_RACE,8,"Hispanic
+Notes: _HISPANC = 1"
+_RACE,9,"Don't know/Not sure/Refused
+Notes: _HISPANC = 7 or 9 or _MRACE1 =
+77 or 99 and _HISPANC = 2"
+_RACEG21,1,Non-Hispanic White Notes: _RACE = 1
+_RACEG21,2,"Non-White or Hispanic
+Notes: _RACE = 2 or 3 or 4 or 5 or 6
+or 7 or 8"
+_RACEG21,9,Don't know/Not sure/Refused Notes: _RACE = 9
+_RACEGR3,1,"White only, Non-Hispanic"
+_RACEGR3,2,"Black only, Non-Hispanic"
+_RACEGR3,3,"Other race only, Non-Hispanic"
+_RACEGR3,4,"Multiracial, Non-Hispanic"
+_RACEGR3,5,Hispanic
+_RACEGR3,9,Don't know/Not sure/Refused
+_RACEPRV,1,"White only, non-Hispanic Notes: _RACE=1 or _RACE=9 and
+_IMPRACE=1"
+_RACEPRV,2,"Black only, non-Hispanic Notes: _RACE=2 or _RACE=9 and
+_IMPRACE=2"
+_RACEPRV,3,"American Indian or Alaskan Native only, Non-Hispanic
+Notes: _RACE=3 or _RACE=9 and
+_IMPRACE=4"
+_RACEPRV,4,"Asian only, non-Hispanic Notes: _RACE=4 or _RACE=9 and
+_IMPRACE=3"
+_RACEPRV,5,"Native Hawaiian or other Pacific Islander only, Non-Hispanic Notes: _RACE=5"
+_RACEPRV,6,"Other race only, non-Hispanic Notes: _RACE=6 or _RACE=9 and
+_IMPRACE=6"
+_RACEPRV,7,"Multiracial, non-Hispanic Notes: _RACE=7"
+_RACEPRV,8,"Hispanic
+Notes: _RACE=8 or _RACE=9 and
+_IMPRACE==5"
+_SEX,1,"Male
+Notes: SEXVAR=1"
+_SEX,2,"Female
+Notes: SEXVAR=2"
+_AGEG5YR,1,"Age 18 to 24
+Notes: 18 <= AGE <= 24"
+_AGEG5YR,2,"Age 25 to 29
+Notes: 25 <= AGE <= 29"
+_AGEG5YR,3,"Age 30 to 34
+Notes: 30 <= AGE <= 34"
+_AGEG5YR,4,"Age 35 to 39
+Notes: 35 <= AGE <= 39"
+_AGEG5YR,5,"Age 40 to 44
+Notes: 40 <= AGE <= 44"
+_AGEG5YR,6,"Age 45 to 49
+Notes: 45 <= AGE <= 49"
+_AGEG5YR,7,"Age 50 to 54
+Notes: 50 <= AGE <= 54"
+_AGEG5YR,8,"Age 55 to 59
+Notes: 55 <= AGE <= 59"
+_AGEG5YR,9,"Age 60 to 64
+Notes: 60 <= AGE <= 64"
+_AGEG5YR,10,"Age 65 to 69
+Notes: 65 <= AGE <= 69"
+_AGEG5YR,11,"Age 70 to 74
+Notes: 70 <= AGE <= 74"
+_AGEG5YR,12,"Age 75 to 79
+Notes: 75 <= AGE <= 79"
+_AGEG5YR,13,"Age 80 or older
+Notes: 80 <= AGE <= 99"
+_AGEG5YR,14,Don't know/Refused/Missing Notes: 7 <= AGE <= 9
+_AGE65YR,1,"Age 18 to 64
+Notes: 18 <= AGE <= 64"
+_AGE65YR,2,"Age 65 or older
+Notes: 65 <= AGE <= 99"
+_AGE65YR,3,Don't know/Refused/Missing Notes: 7 <= AGE <= 9
+_AGE_G,1,"Age 18 to 24
+Notes: 18 <= _IMPAGE <= 24"
+_AGE_G,2,"Age 25 to 34
+Notes: 25 <= _IMPAGE <= 34"
+_AGE_G,3,"Age 35 to 44
+Notes: 35 <= _IMPAGE <= 44"
+_AGE_G,4,"Age 45 to 54
+Notes: 45 <= _IMPAGE <= 54"
+_AGE_G,5,"Age 55 to 64
+Notes: 55 <= _IMPAGE <= 64"
+_AGE_G,6,Age 65 or older Notes: _IMPAGE => 65
+_BMI5CAT,1,"Underweight
+Notes: _BMI5 < 1850 (_BMI5 has 2 implied decimal places)"
+_BMI5CAT,2,"Normal Weight
+Notes: 1850 <= _BMI5 < 2500"
+_BMI5CAT,3,"Overweight
+Notes: 2500 <= _BMI5 < 3000"
+_BMI5CAT,4,"Obese
+Notes: 3000 <= _BMI5 < 9999"
+_RFBMI5,1,"No
+Notes: 1200 <= _BMI5 < 2500 (_BMI5
+has 2 implied decimal places)"
+_RFBMI5,2,"Yes
+Notes: 2500 <= _BMI5 < 9999"
+_RFBMI5,9,Don't know/Refused/Missing Notes: _BMI5 = 9999
+_CHLDCNT,1,No children in household Notes: CHILDREN = 88
+_CHLDCNT,2,One child in household Notes: CHILDREN = 01
+_CHLDCNT,3,Two children in household Notes: CHILDREN = 02
+_CHLDCNT,4,Three children in household Notes: CHILDREN = 03
+_CHLDCNT,5,Four children in household Notes: CHILDREN = 04
+_CHLDCNT,6,Five or more children in household Notes: 05 <= CHILDREN < 88
+_CHLDCNT,9,Don't know/Not sure/Missing Notes: CHILDREN = 99
+_EDUCAG,1,Did not graduate High School Notes: EDUCA = 1 or 2 or 3
+_EDUCAG,2,Graduated High School Notes: EDUCA = 4
+_EDUCAG,3,Attended College or Technical School Notes: EDUCA = 5
+_EDUCAG,4,"Graduated from College or Technical School
+Notes: EDUCA = 6"
+_EDUCAG,9,Don't know/Not sure/Missing Notes: EDUCA = 9 or Missing
+_INCOMG1,1,"Less than $15,000 Notes: INCOME3=1,2"
+_INCOMG1,2,"$15,000 to < $25,000 Notes: INCOME3=3,4"
+_INCOMG1,3,"$25,000 to < $35,000 Notes: INCOME3=5"
+_INCOMG1,4,"$35,000 to < $50,000 Notes: INCOME3=6"
+_INCOMG1,5,"$50,000 to < $100,000 Notes: INCOME3=7,8"
+_INCOMG1,6,"$100,000 to < $200,000 Notes: INCOME3=9,10"
+_INCOMG1,7,"$200,000 or more Notes: INCOME3=11"
+_INCOMG1,9,"Don't know/Not sure/Missing Notes: INCOME3=77, 99, or Missing"
+_SMOKER3,1,Current smoker - now smokes every day Notes: SMOKE100 = 1 and SMOKEDAY = 1
+_SMOKER3,2,Current smoker - now smokes some days Notes: SMOKE100 = 1 and SMOKEDAY = 2
+_SMOKER3,3,"Former smoker
+Notes: SMOKE100 = 1 and SMOKEDAY = 3"
+_SMOKER3,4,"Never smoked
+Notes: SMOKE100 = 2"
+_SMOKER3,9,"Don't know/Refused/Missing
+Notes: SMOKE100 = 1 and SMOKEDAY = 9
+or SMOKE100 = 7 or 9 or Missing"
+_RFSMOK3,1,"No
+Notes: _SMOKER3 = 3 or 4"
+_RFSMOK3,2,"Yes
+Notes: _SMOKER3 = 1 or 2"
+_RFSMOK3,9,Don't know/Refused/Missing Notes: _SMOKER3 = 9
+_CURECI2,1,"Not currently using E-cigarettes Notes: ECIGNOW2=1, 4"
+_CURECI2,2,"Current E-cigarette user Notes: ECIGNOW2=2,3"
+_CURECI2,9,"Don't know/Refused/Missing Notes: ECIGNOW2=7,9, or Missing"
+DRNKANY6,1,"Yes
+Notes: 1 <= ALCDAY4 <= 231"
+DRNKANY6,2,"No
+Notes: ALCDAY4=888"
+DRNKANY6,7,Don't know/Not Sure Notes: ALCDAY4=777
+DRNKANY6,9,"Refused/Missing
+Notes: ALCDAY4=999, Missing"
+DROCDY4_,0,No Drink-Occasions per day Notes: ALCDAY4 = 888
+DROCDY4_,900,"Don't know/Not Sure Or Refused/Missing
+Notes: ALCDAY4 = 777 or 999 or Missing"
+_RFBING6,1,"No
+Notes: ALCDAY4<231 and DRNK3GE5=88; or ALCDAY4=888"
+_RFBING6,2,"Yes
+Notes: ALCDAY4<231 and 1<=DRNK3GE5<=76"
+_RFBING6,9,"Don't know/Refused/Missing
+Notes: DRNK3GE5=77, 99, missing; or ALCDAY4=777, 999, missing"
+_DRNKWK2,0,"Did not drink
+Notes: DROCDY4_=0 or AVEDRNK3=88"
+_DRNKWK2,99900,"Don't know/Not sure/Refused/Missing Notes: AVEDRNK3=.,77,99 or DROCDY4_=900"
+_RFDRHV8,1,"No
+Notes: (SEXVAR=1) and _DRNKWK2 <= 1400 or (SEXVAR=2) and _DRNKWK2 <= 700 or ALCDAY4=888"
+_RFDRHV8,2,"Yes
+Notes: (SEXVAR=1) and _DRNKWK2 > 1400 or (SEXVAR=2) and _DRNKWK2 > 700"
+_RFDRHV8,9,"Don't know/Refused/Missing
+Notes: ALCDAY5=777, 999, or Missing, or
+_DRNKWEK=99, or Missing"
+_FLSHOT7,1,"Yes
+Notes: AGE >=65 and FLUSHOT7 = 1"
+_FLSHOT7,2,"No
+Notes: AGE >=65 and FLUSHOT7 = 2"
+_FLSHOT7,9,Don't know/Not Sure Or Refused/Missing
+_PNEUMO3,1,"Yes
+Notes: AGE >= 65 and PNEUVAC4 = 1"
+_PNEUMO3,2,"No
+Notes: AGE >= 65 and PNEUVAC4 = 2"
+_PNEUMO3,9,"Don't know/Not Sure Or Refused/Missing
+Notes: AGE = 7 or 9 or Missing or PNEUVAC4 = 7 or 9 or Missing"
+_AIDTST4,1,"Yes
+Notes: HIVTST7 = 1"
+_AIDTST4,2,"No
+Notes: HIVTST7 = 2"
+_AIDTST4,9,Don't know/Not Sure/Refused Notes: HIVTST7 = 7 or 9
+_RFSEAT2,1,Always or Almost Always Wear Seat Belt
+_RFSEAT2,2,"Sometimes, Seldom, or Never Wear Seat Belt"
+_RFSEAT2,9,Don't know/Not Sure Or Refused/Missing
+_RFSEAT3,1,Always Wear Seat Belt
+_RFSEAT3,2,Don't Always Wear Seat Belt
+_RFSEAT3,9,Don't know/Not Sure Or Refused/Missing
+_DRNKDRV,1,Have driven after having too much to drink
+_DRNKDRV,2,Have not driven after having too much to drink
+_DRNKDRV,9,Don't know/Not Sure/Refused/Missing
