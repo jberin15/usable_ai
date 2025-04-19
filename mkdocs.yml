@@ -133,6 +133,9 @@ nav:
         - m07-classification_clustering/assignment_m07_classification.ipynb
     - "Module 8 - Model Evaluation and Validation":
         - m08-model_evaluation/assignment_m08_clustering.ipynb
+    - "Module 9 - Parameter tuning and Feature selection":
+        - m09-parameter_feature_selection/assignment_m09_parameter_feature_selection.ipynb
+
 
 
     # - "Module 1 - Python basics":
