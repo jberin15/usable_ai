@@ -43,3 +43,9 @@ Datasets collected from Kaggle
     - `mysterious_data.csv`
     - ?????
 
+ - Sentiment Labelled Sentences
+    - `amazon_cells_labelled.tsv`
+    - `imdb_labelled.tsv`
+    - `yelp_labelled.tsv`
+    - This dataset was created for the Paper 'From Group to Individual Labels using Deep Features', Kotzias et. al,. KDD 2015. It contains sentences labelled with positive or negative sentiment.
+    - Link: https://archive.ics.uci.edu/dataset/331/sentiment+labelled+sentences

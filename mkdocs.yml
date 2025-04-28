@@ -135,7 +135,11 @@ nav:
         - m08-model_evaluation/assignment_m08_clustering.ipynb
     - "Module 9 - Parameter tuning and Feature selection":
         - m09-parameter_feature_selection/assignment_m09_parameter_feature_selection.ipynb
-
+    - "Module 10 - NLP":
+        - m10-text/assignment_m10_sentiment_analysis.ipynb
+    - "Module 11 - Artificial Intelligence":
+        - m11-artificial_intelligence/assignment_m11_artificial_intelligence.ipynb
+        
 
 
     # - "Module 1 - Python basics":
